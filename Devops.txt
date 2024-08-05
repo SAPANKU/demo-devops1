@@ -1,0 +1,130 @@
+Day-3 ssession - How to push master branch
+
+
+1-how to create a repo ?
+ - lunch an instance(sg all traffic allow)
+ - sudo apt-get update
+ - by default git install on your instance 
+ - git version (check git install version)
+ - pwd (check current working directory)
+ - git clone repo(git file http copy and pest here)
+ - ls -l (check here what are file on git)
+2- Create a folder & track by git
+ - mkdir project1
+ -vi file1.java(vi comand use for create a file
+               after inside vi folder press i, after write somethin press esc, then :wq it sava the file)
+ -ls -la (check all hiden file)
+ -ls -l (check all fiel)(available all folder in working ditectory)
+ -git init (project1 track by git so use ghis comand)
+   WD-working ditectory  
+   SA-staging area (after file commit from SA to LR file are not SA because SA is a temporary location)
+   LR-local repo
+   RR-remote repo
+   file move WD to SA - git add filename
+   file move SA to LR - giy commit
+   file move LR to RR - git push
+ -git status (where is my file)
+              show on branch master 
+              commit/no commit file
+              tracked or untracked files
+ -git add file name
+ -git commit -m(massage) "1st-commit"
+ -git status
+ -git log (check commit id)
+ -git config --global user.email "sapankumarandia90@gmail.com"
+ -git config --global user.name "SAPANKU"
+ -vi file2.java
+ -git add file
+ -git commit -m "2nd-commit"
+ -git log
+ -git log --oneline (it show all commit id ata time & show latest commit id )
+ -git remote -v(show origin )
+ -git remote origin https://github.com/SAPANKU/Devops-julay-2024.git
+ -git remote add origin https://github.com/SAPANKU/Devops-julay-2024.git(standard method to push comand)
+  require password that generate a tocken on git
+ -git remote -v
+ -git push origin master
+
+
+        Below command are used in Pssh project1 file on git DAY-3 davops session
+    1  pwd
+    2  ls -l
+    3  git clone https://github.com/SAPANKU/Devops-julay-2024.git
+    4  ls -l
+    5  cd Devops-julay-2024/
+    6  ls -l
+    7  ls -la
+    8  clear
+    9  cdd ..
+   10  cd ..
+   11  mkdit project1
+   12  mkdir project1
+   13  vi file1.java
+   14  cat file1.java
+   15  lss -la
+   16  ls -la
+   17  cd project1/
+   18  ls -la
+   19  cat file1.java
+   20  vi file1.java
+   21  ls -la
+   22  cd ../Devops-julay-2024/
+   23  ls -la
+   24  cd ..
+   25  cd ../project/
+   26  cd ../project1/
+   27  cd project1/
+   28  ls -la
+   29  git init
+   30  ls -la
+   31  git add file1.java
+   32  git status
+   33  git commit -m "1st-commit"
+   34  git status
+   35  git log
+   36  git config --global user.email "sapankumarandia90@gmail.com"
+   37  git config --global user.name "SAPANKU"
+   38  vi file2.java
+   39  cat file2.java
+   40  git add file2.java
+   41  git commit -m "2nd-commit"
+   42  git log
+   43  git log --oneline
+   44  git remote -v
+   45  git remote origin https://github.com/SPANKU/Devops-julay-2024.git
+   46  git remote add origin https://github.com/SAPANKU/Devops-julay-2024.git
+   47  git remote -v
+   48  git push origin master
+   49  historygi
+
+
+
+
+Day-4 
+
+
+  -git branch
+  -add additional-commit on git master branch
+  -git pull origin master (download latest update pushed on master branch)
+  -git branch b1 master (b1 is a sub branch of master branch)
+  -git checkout b1 (now all are ander b1)
+  -git ls-files (SA/LA)
+  -vi sample2.java
+  -git status
+  -git add sample2.java
+  -git commit -m "b1-1st-commit"
+  -git log --oneline
+  -git push origin b1
+  -give tocken password
+how to branch protection
+  -open git setting > branch > add classic branch protection >branch pattern name > requie a pull request > 
+                    > create > put password
+how to create pull request ?
+  -git status
+  -git log --one line
+  -git checkout master
+  -git pull origin master
+  -git log --oneline
+  -git rebase master(it is require because when some addition update anything then we need pull request)
+  -git log --oneline
+  
